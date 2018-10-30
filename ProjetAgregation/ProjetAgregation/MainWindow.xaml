@@ -8,14 +8,18 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="Menu" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Button_Click"/>
-        <Button Content="Acueil" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,370,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button Content="Acueil" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button Content="Amis" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button Content="Email" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button Content="Graph" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button Content="News" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button Content="Chat" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button Content="Pokemon" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button Content="Crypto" HorizontalAlignment="Left" Margin="10,378,0,0" VerticalAlignment="Top" Width="40" Height="40"/>
+        <Canvas HorizontalAlignment="Left" Height="355" Margin="55,63,0,0" VerticalAlignment="Top" Width="729"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="331,10,0,0" TextWrapping="Wrap" Text="Acueil" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="96,10,0,0" TextWrapping="Wrap" Text="AAAA/MM/JJ" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="635,10,0,0" TextWrapping="Wrap" Text="Utulisateur" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

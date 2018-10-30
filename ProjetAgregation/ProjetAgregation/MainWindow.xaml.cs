@@ -24,5 +24,10 @@ namespace ProjetAgregation
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged()
+        {
+
+        }
     }
 }
