@@ -9,7 +9,7 @@
     <Grid Background="Black">
         <Button Content="Menu" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod"/>
         <Button Content="Acueil" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Acueil_Click"/>
-        <Button Content="Amis" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Amis_Click"/>
+        <Button Content="Amis" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Red" Click="Amis_Click"/>
         <Button Content="Email" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Email_Click"/>
         <Button Content="Graph" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Graph_Click"/>
         <Button Content="News" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="News_Click"/>
