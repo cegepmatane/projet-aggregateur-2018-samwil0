@@ -17,7 +17,7 @@
         <Button Content="Pokemon" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Red" Click="Pokemon_Click"/>
         <Button Content="Crypto" HorizontalAlignment="Left" Margin="10,378,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Crypto_Click"/>
         <Canvas HorizontalAlignment="Left" Height="355" Margin="55,63,0,0" VerticalAlignment="Top" Width="730" Background="Red"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="331,10,0,0" TextWrapping="Wrap" Text="Acueil" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="331,10,0,0" TextWrapping="Wrap" Text="Pokemon" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="96,10,0,0" TextWrapping="Wrap" Text="AAAA/MM/JJ" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="635,10,0,0" TextWrapping="Wrap" Text="Utulisateur" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
     </Grid>
