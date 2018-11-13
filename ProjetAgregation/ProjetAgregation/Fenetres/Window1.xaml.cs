@@ -19,8 +19,12 @@ namespace ProjetAgregation.Fenetres
     /// </summary>
     public partial class Window1 : Window
     {
+
+
+
         public Window1()
         {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
         }
 
@@ -75,6 +79,12 @@ namespace ProjetAgregation.Fenetres
         {
             Window8 crypto = new Window8();
             crypto.Show();
+            this.Close();
+        }
+
+        private void Menu_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.MainWindow.Show();
             this.Close();
         }
 

@@ -7,18 +7,18 @@
         mc:Ignorable="d"
         Title="Agregation" Height="450" Width="800" Background="Red">
     <Grid Background="Black">
-        <Button Content="Menu" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod"/>
-        <Button Content="Acueil" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Red" Click="Acueil_Click"/>
-        <Button Content="Amis" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Amis_Click"/>
-        <Button Content="Email" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Email_Click"/>
-        <Button Content="Graph" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Graph_Click"/>
-        <Button Content="News" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="News_Click"/>
-        <Button Content="Chat" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Chat_Click"/>
-        <Button Content="Pokemon" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Pokemon_Click"/>
-        <Button Content="Crypto" HorizontalAlignment="Left" Margin="10,378,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Crypto_Click"/>
-        <Canvas HorizontalAlignment="Left" Height="355" Margin="55,63,0,0" VerticalAlignment="Top" Width="730" Background="Red"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="331,10,0,0" TextWrapping="Wrap" Text="Acueil" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="96,10,0,0" TextWrapping="Wrap" Text="AAAA/MM/JJ" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
+        <Canvas HorizontalAlignment="Left" Height="355" Margin="10,63,0,0" VerticalAlignment="Top" Width="775" Background="Red"/>
+        <Button Content="Acueil" HorizontalAlignment="Left" Margin="24,78,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Acueil_Click" FontSize="30"/>
+        <Button Content="Amis" HorizontalAlignment="Left" Margin="230,78,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Amis_Click" FontSize="30"/>
+        <Button Content="Email" HorizontalAlignment="Left" Margin="422,78,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Email_Click" FontSize="30"/>
+        <Button Content="Graph" HorizontalAlignment="Left" Margin="618,78,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Graph_Click" FontSize="30"/>
+        <Button Content="News" HorizontalAlignment="Left" Margin="618,256,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="News_Click" FontSize="30"/>
+        <Button Content="Chat" HorizontalAlignment="Left" Margin="422,256,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Chat_Click" FontSize="30"/>
+        <Button Content="Pokemon" HorizontalAlignment="Left" Margin="230,256,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Pokemon_Click" FontSize="30"/>
+        <Button Content="Crypto" HorizontalAlignment="Left" Margin="24,256,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Crypto_Click" FontSize="30"/>
+
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="331,10,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="24,10,0,0" TextWrapping="Wrap" Text="AAAA/MM/JJ" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="635,10,0,0" TextWrapping="Wrap" Text="Utulisateur" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
     </Grid>
 </Window>

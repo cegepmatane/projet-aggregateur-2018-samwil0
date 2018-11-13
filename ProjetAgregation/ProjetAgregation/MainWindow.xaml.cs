@@ -24,6 +24,7 @@ namespace ProjetAgregation
     {
         public MainWindow()
         {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
         }
 
@@ -82,5 +83,6 @@ namespace ProjetAgregation
             crypto.Show();
             this.Hide();
         }
+
     }
 }
