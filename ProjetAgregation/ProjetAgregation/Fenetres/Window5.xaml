@@ -7,18 +7,84 @@
         mc:Ignorable="d"
         Title="Agregation" Height="450" Width="800" Background="Red">
     <Grid Background="Black">
-        <Button Content="Menu" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Menu_Click"/>
-        <Button Content="Acueil" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Acueil_Click"/>
-        <Button Content="Amis" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Amis_Click"/>
-        <Button Content="Email" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Email_Click"/>
-        <Button Content="Graph" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Graph_Click"/>
-        <Button Content="News" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Red" Click="News_Click"/>
-        <Button Content="Chat" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Chat_Click"/>
-        <Button Content="Pokemon" HorizontalAlignment="Left" Margin="10,333,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Pokemon_Click"/>
-        <Button Content="Crypto" HorizontalAlignment="Left" Margin="10,378,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="Goldenrod" Click="Crypto_Click"/>
-        <Canvas HorizontalAlignment="Left" Height="355" Margin="55,63,0,0" VerticalAlignment="Top" Width="730" Background="Red"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="331,10,0,0" TextWrapping="Wrap" Text="News" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="96,10,0,0" TextWrapping="Wrap" Text="AAAA/MM/JJ" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="635,10,0,0" TextWrapping="Wrap" Text="Utulisateur" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
+        <Grid HorizontalAlignment="Left" Height="428" VerticalAlignment="Top" Width="55">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+            <Button Content="Menu" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Menu_Click"/>
+            <Button Content="Acueil" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Acueil_Click" Grid.Row="1"/>
+            <Button Content="Amis" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Amis_Click" Grid.Row="2"/>
+            <Button Content="Email" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Email_Click" Grid.Row="3"/>
+            <Button Content="Graph" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Graph_Click" Grid.Row="4"/>
+            <Button Content="News" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Red" Click="News_Click" Grid.Row="5"/>
+            <Button Content="Chat" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Chat_Click" Grid.Row="6"/>
+            <Button Content="Pokemon" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Pokemon_Click" Grid.Row="7"/>
+            <Button Content="Crypto" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Crypto_Click" Grid.Row="8"/>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="63" Margin="55,0,0,0" VerticalAlignment="Top" Width="730">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250*"/>
+                <ColumnDefinition Width="250*"/>
+                <ColumnDefinition Width="250*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Acueil" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="1"/>
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="AAAA/MM/JJ" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="0"/>
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Utulisateur" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="2"/>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="355" Margin="55,63,0,0" VerticalAlignment="Top" Width="730" Background="Red">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="150*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200*"/>
+                <RowDefinition Height="200*"/>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center"/>
+            <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+
+            <TextBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center"/>
+            <Image Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+
+            <TextBox Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center"/>
+            <Image Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+
+            <TextBox Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center"/>
+            <Image Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+
+            <TextBox Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center"/>
+            <Image Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+
+            <TextBox Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center"/>
+            <Image Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+
+            <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center"/>
+            <Image Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+
+            <TextBox Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center"/>
+            <Image Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+
+            <TextBox Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center"/>
+            <Image Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+
+            <TextBox Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center"/>
+            <Image Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+        </Grid>
+
     </Grid>
 </Window>
+

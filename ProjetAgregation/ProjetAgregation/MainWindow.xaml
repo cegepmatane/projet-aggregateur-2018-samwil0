@@ -7,18 +7,30 @@
         mc:Ignorable="d"
         Title="Agregation" Height="450" Width="800" Background="Red">
     <Grid Background="Black">
-        <Canvas HorizontalAlignment="Left" Height="355" Margin="10,63,0,0" VerticalAlignment="Top" Width="775" Background="Red"/>
-        <Button Content="Acueil" HorizontalAlignment="Left" Margin="24,78,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Acueil_Click" FontSize="30"/>
-        <Button Content="Amis" HorizontalAlignment="Left" Margin="230,78,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Amis_Click" FontSize="30"/>
-        <Button Content="Email" HorizontalAlignment="Left" Margin="422,78,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Email_Click" FontSize="30"/>
-        <Button Content="Graph" HorizontalAlignment="Left" Margin="618,78,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Graph_Click" FontSize="30"/>
-        <Button Content="News" HorizontalAlignment="Left" Margin="618,256,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="News_Click" FontSize="30"/>
-        <Button Content="Chat" HorizontalAlignment="Left" Margin="422,256,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Chat_Click" FontSize="30"/>
-        <Button Content="Pokemon" HorizontalAlignment="Left" Margin="230,256,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Pokemon_Click" FontSize="30"/>
-        <Button Content="Crypto" HorizontalAlignment="Left" Margin="24,256,0,0" VerticalAlignment="Top" Width="150" Height="150" Background="Goldenrod" Click="Crypto_Click" FontSize="30"/>
 
         <TextBox HorizontalAlignment="Left" Height="23" Margin="331,10,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="24,10,0,0" TextWrapping="Wrap" Text="AAAA/MM/JJ" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="635,10,0,0" TextWrapping="Wrap" Text="Utulisateur" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
+
+        <Grid Background="Red" Height="355" Margin="0,73,-0.4,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150*"/>
+                <RowDefinition Height="150*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Acueil" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="150" Background="Goldenrod" Click="Acueil_Click" FontSize="30" Grid.Column="0"/>
+            <Button Content="Amis" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="150" Height="150" Background="Goldenrod" Click="Amis_Click" FontSize="30" Grid.Column="1"/>
+            <Button Content="Email" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="150" Height="150" Background="Goldenrod" Click="Email_Click" FontSize="30" Grid.Column="2"/>
+            <Button Content="Graph" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="150" Height="150" Background="Goldenrod" Click="Graph_Click" FontSize="30" Grid.Column="3"/>
+            <Button Content="News" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="150" Height="150" Background="Goldenrod" Click="News_Click" FontSize="30" Grid.Column="3" Grid.Row="1"/>
+            <Button Content="Chat" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="150" Background="Goldenrod" Click="Chat_Click" FontSize="30" Grid.Column="2" Grid.Row="1"/>
+            <Button Content="Pokemon" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="150" Height="150" Background="Goldenrod" Click="Pokemon_Click" FontSize="30" Grid.Column="1" Grid.Row="1"/>
+            <Button Content="Crypto" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="150" Height="150" Background="Goldenrod" Click="Crypto_Click" FontSize="30" Grid.Column="0" Grid.Row="1"/>
+        </Grid>
     </Grid>
 </Window>
