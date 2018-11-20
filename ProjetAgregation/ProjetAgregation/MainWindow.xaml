@@ -4,13 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjetAgregation"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="Agregation" Height="450" Width="800" Background="Red">
     <Grid Background="Black">
 
         <TextBox HorizontalAlignment="Left" Height="23" Margin="331,10,0,0" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="24,10,0,0" TextWrapping="Wrap" Text="AAAA/MM/JJ" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="635,10,0,0" TextWrapping="Wrap" Text="Utulisateur" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="24,10,0,0" TextWrapping="Wrap" Text="{Binding Source={x:Static sys:DateTime.Now}, Mode=OneWay,  StringFormat='yyyy-MM-dd HH:mm:ss '}" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="12" TextAlignment="Center" IsReadOnly = "True"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="635,10,0,0" TextWrapping="Wrap" Text="{Binding Source={x:Static sys:Environment.UserName}, Mode=OneWay}" VerticalAlignment="Top" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True"/>
 
         <Grid Background="Red" Height="355" Margin="0,73,-0.4,0">
             <Grid.RowDefinitions>

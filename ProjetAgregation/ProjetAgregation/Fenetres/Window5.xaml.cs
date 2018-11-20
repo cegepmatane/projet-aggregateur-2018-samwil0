@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ProjetAgregation.Code;
 
 namespace ProjetAgregation.Fenetres
 {
@@ -19,14 +20,59 @@ namespace ProjetAgregation.Fenetres
     /// </summary>
     public partial class Window5 : Window
     {
+        ParseurNews nouvelleDAO = new ParseurNews();
         public Window5()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
         }
+        int i = 1;
+        //commende pour aficher les nouvelles
+        private void montrerNouvelles(object sender, RoutedEventArgs e)
+        {
+            string rssReddit = "https://www.reddit.com/.rss";
+            List<Nouvelle> listeNouvelles = nouvelleDAO.listerNouvelles(rssReddit);
 
-        //Fonctions reserver pour changer de fenetre
-        private void Acueil_Click(object sender, RoutedEventArgs e)
+            // il faut partir au 7em element car les 6 premier ne sont pas des nouvelles
+            Nouvelle new1 = listeNouvelles[7];
+            Console.WriteLine(new1.name);
+            nouvelle1.Text = new1.name;
+
+            Nouvelle new2 = listeNouvelles[8];
+            Console.WriteLine(new2.name);
+            nouvelle2.Text = new2.name;
+
+            Nouvelle new3 = listeNouvelles[9];
+            Console.WriteLine(new3.name);
+            nouvelle3.Text = new3.name;
+
+            Nouvelle new4 = listeNouvelles[10];
+            Console.WriteLine(new4.name);
+            nouvelle4.Text = new4.name;
+
+            Nouvelle new5 = listeNouvelles[11];
+            Console.WriteLine(new5.name);
+            nouvelle5.Text = new5.name;
+
+            Nouvelle new6 = listeNouvelles[12];
+            Console.WriteLine(new6.name);
+            nouvelle6.Text = new6.name;
+
+            Nouvelle new7 = listeNouvelles[13];
+            Console.WriteLine(new7.name);
+            nouvelle7.Text = new7.name;
+
+            Nouvelle new8 = listeNouvelles[14];
+            Console.WriteLine(new8.name);
+            nouvelle8.Text = new8.name;
+
+            Nouvelle new9 = listeNouvelles[15];
+            Console.WriteLine(new9.name);
+            nouvelle9.Text = new9.name;
+        }
+
+    //Fonctions reserver pour changer de fenetre
+    private void Acueil_Click(object sender, RoutedEventArgs e)
         {
             Window1 acueil = new Window1();
             acueil.Show();
