@@ -23,12 +23,13 @@ namespace ProjetAgregation.Fenetres
         ParseurNews nouvelleDAO = new ParseurNews();
         public Window5()
         {
+            
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
+            montrerNouvelles();
         }
-        int i = 1;
         //commende pour aficher les nouvelles
-        private void montrerNouvelles(object sender, RoutedEventArgs e)
+        private void montrerNouvelles()
         {
             string rssReddit = "https://www.reddit.com/.rss";
             List<Nouvelle> listeNouvelles = nouvelleDAO.listerNouvelles(rssReddit);
@@ -69,6 +70,10 @@ namespace ProjetAgregation.Fenetres
             Nouvelle new9 = listeNouvelles[15];
             Console.WriteLine(new9.name);
             nouvelle9.Text = new9.name;
+
+            Nouvelle new10 = listeNouvelles[16];
+            Console.WriteLine(new10.name);
+            nouvelle10.Text = new10.name;
         }
 
     //Fonctions reserver pour changer de fenetre

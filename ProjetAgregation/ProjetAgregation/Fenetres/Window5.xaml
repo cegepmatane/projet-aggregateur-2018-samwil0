@@ -38,7 +38,7 @@
                 <ColumnDefinition Width="250*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Acueil" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="1"/>
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="News" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="1"/>
             <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="{Binding Source={x:Static sys:DateTime.Now}, Mode=OneWay,  StringFormat='yyyy-MM-dd HH:mm:ss '}" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="12" TextAlignment="Center" IsReadOnly = "True" Grid.Column="0"/>
             <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="{Binding Source={x:Static sys:Environment.UserName}, Mode=OneWay}" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="2"/>
         </Grid>
@@ -56,34 +56,36 @@
                 <RowDefinition Height="200*"/>
             </Grid.RowDefinitions>
             <TextBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle1" IsReadOnly = "True"/>
-            <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+            <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg1"/>
 
             <TextBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle2" IsReadOnly = "True"/>
-            <Image Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+            <Image Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg2"/>
 
             <TextBox Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle3" IsReadOnly = "True"/>
-            <Image Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+            <Image Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg3"/>
 
             <TextBox Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle4" IsReadOnly = "True"/>
-            <Image Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+            <Image Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg4"/>
 
             <TextBox Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle5" IsReadOnly = "True"/>
-            <Image Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+            <Image Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg5"/>
 
             <TextBox Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle6" IsReadOnly = "True"/>
-            <Image Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+            <Image Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg6"/>
 
             <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle7" IsReadOnly = "True"/>
-            <Image Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+            <Image Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg7"/>
 
             <TextBox Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle8" IsReadOnly = "True"/>
-            <Image Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" />
+            <Image Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg8"/>
 
             <TextBox Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle9" IsReadOnly = "True"/>
-            <Image Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0"/>
-            
-            
-            <Button Grid.Column="4" Grid.Row="1" Content="montrer nouvelles" HorizontalAlignment="Left" Margin="9.8,10.4,-0.4,0" VerticalAlignment="Top" Width="137" Height="166" Click="montrerNouvelles"/>
+            <Image Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg9"/>
+           
+            <TextBox Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle10" IsReadOnly = "True"/>
+            <Image Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg10"/>
+
+
         </Grid>
 
     </Grid>

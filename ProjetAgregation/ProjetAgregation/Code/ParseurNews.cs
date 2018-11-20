@@ -31,18 +31,23 @@ namespace ProjetAgregation.Code
                 string name = lecteurNouvelle.ReadInnerXml();
                 Console.WriteLine(name);
 
-            //   lecteurNouvelle.ReadToFollowing("published");
-             //   string publication = lecteurNouvelle.ReadInnerXml();
-             //   Console.WriteLine(publication);
+                lecteurNouvelle.ReadToFollowing("img");
+                string img = lecteurNouvelle.ReadInnerXml();
+                Console.WriteLine(img);
 
-              //  lecteurNouvelle.ReadToFollowing("summary");
-              //  string resume = lecteurNouvelle.ReadInnerXml();
-              //  Console.WriteLine(resume);
+                //   lecteurNouvelle.ReadToFollowing("published");
+                //   string publication = lecteurNouvelle.ReadInnerXml();
+                //   Console.WriteLine(publication);
+
+                //  lecteurNouvelle.ReadToFollowing("summary");
+                //  string resume = lecteurNouvelle.ReadInnerXml();
+                //  Console.WriteLine(resume);
 
                 Nouvelle nouvelle = new Nouvelle();
                 nouvelle.name = name;
-               // nouvelle.publication = publication;
-               // nouvelle.resume = resume;
+                nouvelle.img = img;
+                // nouvelle.publication = publication;
+                // nouvelle.resume = resume;
 
                 listeNouvelles.Add(nouvelle);
             }

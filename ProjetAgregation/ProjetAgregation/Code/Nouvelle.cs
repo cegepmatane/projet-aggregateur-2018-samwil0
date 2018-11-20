@@ -9,9 +9,10 @@ namespace ProjetAgregation.Code
     class Nouvelle
     {
         public string name { get; set; }
-        public string lien { get; set; }
-        public string publication { get; set; } // TODO modifier le type pour une date
-        public string categorie { get; set; }
-        public string resume { get; set; }
+        public string img { get; set; }
+        // public string lien { get; set; }
+        // public string publication { get; set; } // TODO modifier le type pour une date
+        // public string categorie { get; set; }
+        //public string resume { get; set; }
     }
 }

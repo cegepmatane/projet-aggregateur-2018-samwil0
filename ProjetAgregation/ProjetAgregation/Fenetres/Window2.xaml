@@ -37,7 +37,7 @@
                 <ColumnDefinition Width="250*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Acueil" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="1"/>
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Amis" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="1"/>
             <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="AAAA/MM/JJ" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="0"/>
             <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Utulisateur" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="2"/>
         </Grid>
