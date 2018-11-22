@@ -15,7 +15,6 @@ namespace ProjetAgregation.Code
         public List<Nouvelle> listerNouvelles(string rss)
         {
             List<Nouvelle> listeNouvelles = new List<Nouvelle>();
-            Console.WriteLine("RssDAO.listerNouvelles(" + rss + ")");
             HttpWebRequest requeteNouvelles = (HttpWebRequest)WebRequest.Create(rss);
             requeteNouvelles.Method = "GET";
             requeteNouvelles.UserAgent = "Mozilla Firefox";
@@ -29,25 +28,13 @@ namespace ProjetAgregation.Code
                 lecteurNouvelle.MoveToContent();
                 lecteurNouvelle.ReadToDescendant("title");
                 string name = lecteurNouvelle.ReadInnerXml();
-                Console.WriteLine(name);
 
                 lecteurNouvelle.ReadToFollowing("img");
                 string img = lecteurNouvelle.ReadInnerXml();
-                Console.WriteLine(img);
-
-                //   lecteurNouvelle.ReadToFollowing("published");
-                //   string publication = lecteurNouvelle.ReadInnerXml();
-                //   Console.WriteLine(publication);
-
-                //  lecteurNouvelle.ReadToFollowing("summary");
-                //  string resume = lecteurNouvelle.ReadInnerXml();
-                //  Console.WriteLine(resume);
 
                 Nouvelle nouvelle = new Nouvelle();
                 nouvelle.name = name;
                 nouvelle.img = img;
-                // nouvelle.publication = publication;
-                // nouvelle.resume = resume;
 
                 listeNouvelles.Add(nouvelle);
             }

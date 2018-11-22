@@ -52,7 +52,7 @@
             <TextBox HorizontalAlignment="Center" Height="30" Margin="0,10,0,0" TextWrapping="Wrap" Text="Statistiques graphiques" VerticalAlignment="Top" Width="250" TextAlignment="Center" FontSize="20" Background="Goldenrod"/>
             <TextBox HorizontalAlignment="Center" Height="275" Margin="0,35,0,0" TextWrapping="Wrap" Text="graphique" VerticalAlignment="Center" Width="250" TextAlignment="Center" FontSize="25" Background="Goldenrod" Name="graphique"/>
 
-            <TextBox Grid.Column="1" HorizontalAlignment="Center" Height="30" Margin="0,10,0,0" TextWrapping="Wrap" Text="Statistiques numeriques" VerticalAlignment="Top" Width="250" TextAlignment="Center" FontSize="20" Background="Goldenrod"/>
+            <TextBox Grid.Column="1" HorizontalAlignment="Center" Height="30" Margin="0,10,0,0" TextWrapping="Wrap" Text="Temperatures meteo" VerticalAlignment="Top" Width="250" TextAlignment="Center" FontSize="20" Background="Goldenrod"/>
             <TextBox Grid.Column="1" HorizontalAlignment="Center" Height="275" Margin="0,35,0,0" TextWrapping="Wrap" Text="Donnee" VerticalAlignment="Center" Width="250" TextAlignment="Center" FontSize="25" Background="Goldenrod" Name="donnee"/>
         </Grid>
 

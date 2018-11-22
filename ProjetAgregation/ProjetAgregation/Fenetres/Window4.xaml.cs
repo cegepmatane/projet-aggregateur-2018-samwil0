@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ProjetAgregation.Code;
 
 namespace ProjetAgregation.Fenetres
 {
@@ -19,10 +20,22 @@ namespace ProjetAgregation.Fenetres
     /// </summary>
     public partial class Window4 : Window
     {
+        ParseurMeteo MeteoDAO = new ParseurMeteo();
+
         public Window4()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
+            montrerMeteo();
+        }
+
+        private void montrerMeteo()
+        {
+            string meteoMediaMatane = "http://rss.meteomedia.com/weather/caqc0342";
+            List<Meteo> listeMeteo = MeteoDAO.listerMeteo(meteoMediaMatane);
+
+            Meteo meteo1 = listeMeteo[0];
+            donnee.Text = meteo1.description;
         }
 
         //Fonctions reserver pour changer de fenetre

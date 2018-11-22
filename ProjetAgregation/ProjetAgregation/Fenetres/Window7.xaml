@@ -65,7 +65,7 @@
 
 
             <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Collection Pokemon =====>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Background="LightCoral"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Collection Pokemon ==s===>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Background="LightCoral"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Collection Pokemon =====>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Background="LightCoral"/>
             <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="1" Name="pokemonCollection1" Background="LightCoral"/>
             <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="1" Name="pokemonCollection2" Background="LightCoral"/>
             <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="2" Name="pokemonCollection3" Background="LightCoral"/>

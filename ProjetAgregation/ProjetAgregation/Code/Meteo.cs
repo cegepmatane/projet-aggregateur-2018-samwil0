@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProjetAgregation.Code
 {
-    class Nouvelle
+    class Meteo
     {
-        public string name { get; set; }
-        public string img { get; set; }
+       // public string title { get; set; }
+        public string description { get; set; }
+        public string item { get; set; }
+        
     }
 }
