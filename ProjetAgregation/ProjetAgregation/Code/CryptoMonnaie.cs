@@ -11,7 +11,7 @@ namespace ProjetAgregation.Code
         public string symbole { get; set; }
         public string nom { get; set; }
         public string algorithme { get; set; }
-        public string nombre { get; set; } // TODO changer en int
+        public string nombre { get; set; }
         public string sourceIllustration { get; set; }
 
     }

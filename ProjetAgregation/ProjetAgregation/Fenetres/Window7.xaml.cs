@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ProjetAgregation.Code;
 
 namespace ProjetAgregation.Fenetres
 {
@@ -19,11 +20,31 @@ namespace ProjetAgregation.Fenetres
     /// </summary>
     public partial class Window7 : Window
     {
+        ParseurPokemon pokemonDAO = new ParseurPokemon();
         public Window7()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
+            montrerPokemon();
         }
+
+        public void montrerPokemon()
+        {
+            List<Pokemon> listePokemon = pokemonDAO.listerPokemon();
+
+            Pokemon poke1 = listePokemon[0];
+            pokemonTrouver1.Text = poke1.nom;
+
+            Pokemon poke2 = listePokemon[1];
+            pokemonTrouver2.Text = poke2.nom;
+
+            Pokemon poke3 = listePokemon[2];
+            pokemonTrouver3.Text = poke3.nom;
+
+            Pokemon poke4 = listePokemon[3];
+            pokemonTrouver4.Text = poke4.nom;
+        }
+
 
         //Fonctions reserver pour changer de fenetre
         private void Acueil_Click(object sender, RoutedEventArgs e)

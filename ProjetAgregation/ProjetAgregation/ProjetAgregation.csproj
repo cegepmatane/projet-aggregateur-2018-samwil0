@@ -120,6 +120,8 @@
     <Compile Include="Code\Nouvelle.cs" />
     <Compile Include="Code\ParseurMeteo.cs" />
     <Compile Include="Code\ParseurNews.cs" />
+    <Compile Include="Code\ParseurPokemon.cs" />
+    <Compile Include="Code\Pokemon.cs" />
     <Compile Include="Code\WindowsSwitcher.cs" />
     <Compile Include="Fenetres\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
