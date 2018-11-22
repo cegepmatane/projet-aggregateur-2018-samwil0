@@ -57,23 +57,23 @@
                 <RowDefinition Height="100*"/>
             </Grid.RowDefinitions>
 
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Non Lu =======>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="1" Name="emailNonLu1"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="2" Name="emailNonLu2"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="3" Name="emailNonLu3"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="4" Name="emailNonLu4"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Non Lu =====>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Background="Green"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="1" Name="emailNonLu1"  Background="Green"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="2" Name="emailNonLu2" Background="Green"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="3" Name="emailNonLu3" Background="Green"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="4" Name="emailNonLu4" Background="Green"/>
 
 
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Historique =======>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Historique =======>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="1" Name="emailHistorique1"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="1" Name="emailHistorique2"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="2" Name="emailHistorique3"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="2" Name="emailHistorique4"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="3" Name="emailHistorique5"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="3" Name="emailHistorique6"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="4" Name="emailHistorique7"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="4" Name="emailHistorique8"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Historique =====>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Background="Blue"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Historique =====>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Background="Blue"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="1" Name="emailHistorique1" Background="Blue"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="1" Name="emailHistorique2" Background="Blue"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="2" Name="emailHistorique3" Background="Blue"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="2" Name="emailHistorique4" Background="Blue"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="3" Name="emailHistorique5" Background="Blue"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="3" Name="emailHistorique6" Background="Blue"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="4" Name="emailHistorique7" Background="Blue"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="4" Name="emailHistorique8" Background="Blue"/>
 
         </Grid>
 

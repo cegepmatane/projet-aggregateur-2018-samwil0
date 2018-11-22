@@ -57,23 +57,23 @@
                 <RowDefinition Height="100*"/>
             </Grid.RowDefinitions>
 
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Pokemon Trouver =======>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="1" Name="pokemonTrouver1"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="2" Name="pokemonTrouver2"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="3" Name="pokemonTrouver3"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="4" Name="pokemonTrouver4"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Pokemon Trouver =====>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Background="Yellow"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="1" Name="pokemonTrouver1" Background="Yellow"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="2" Name="pokemonTrouver2" Background="Yellow"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="3" Name="pokemonTrouver3" Background="Yellow"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="X" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="0" Grid.Column="4" Name="pokemonTrouver4" Background="Yellow"/>
 
-            
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Collection Pokemon =======>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Collection Pokemon =======>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="1" Name="pokemonCollection1"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="1" Name="pokemonCollection2"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="2" Name="pokemonCollection3"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="2" Name="pokemonCollection4"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="3" Name="pokemonCollection5"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="3" Name="pokemonCollection6"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="4" Name="pokemonCollection7"/>
-            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="4" Name="pokemonCollection8"/>
+
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Collection Pokemon =====>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Background="LightCoral"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Collection Pokemon ==s===>" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Background="LightCoral"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="1" Name="pokemonCollection1" Background="LightCoral"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="1" Name="pokemonCollection2" Background="LightCoral"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="2" Name="pokemonCollection3" Background="LightCoral"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="2" Name="pokemonCollection4" Background="LightCoral"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="3" Name="pokemonCollection5" Background="LightCoral"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="3" Name="pokemonCollection6" Background="LightCoral"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="1" Grid.Column="4" Name="pokemonCollection7" Background="LightCoral"/>
+            <TextBox HorizontalAlignment="Center" Height="100" TextWrapping="Wrap" Text="Y" TextAlignment="Center" VerticalAlignment="Center" Width="125" FontSize="25" Grid.Row="2" Grid.Column="4" Name="pokemonCollection8" Background="LightCoral"/>
 
         </Grid>
 
