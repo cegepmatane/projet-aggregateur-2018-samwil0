@@ -16,29 +16,17 @@ using ProjetAgregation.Code;
 namespace ProjetAgregation.Fenetres
 {
     /// <summary>
-    /// Logique d'interaction pour Window1.xaml
+    /// Logique d'interaction pour News.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class News : Window
     {
-
-
         ParseurNews nouvelleDAO = new ParseurNews();
-        ParseurMeteo MeteoDAO = new ParseurMeteo();
-        ParseurPokemon pokemonDAO = new ParseurPokemon();
-        CryptoMonnaie cryptomonnaieDAO = new CryptoMonnaie();
-
-        public Window1()
+        public News()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
             montrerNouvelles();
-            montrerMeteo();
-            montrerPokemon();
-            montrerMonnaie();
         }
-
-
-
         //commende pour aficher les nouvelles
         private void montrerNouvelles()
         {
@@ -47,33 +35,34 @@ namespace ProjetAgregation.Fenetres
 
             // il faut partir au 7em element car les 6 premier ne sont pas des nouvelles
             Nouvelle new1 = listeNouvelles[7];
-            news.Text = news.Text + new1.name;
-        }
+            nouvelle1.Text = new1.name;
 
-        private void montrerMeteo()
-        {
-            string meteoMediaMatane = "http://rss.meteomedia.com/weather/caqc0342";
-            List<Meteo> listeMeteo = MeteoDAO.listerMeteo(meteoMediaMatane);
+            Nouvelle new2 = listeNouvelles[8];
+            nouvelle2.Text = new2.name;
 
-            Meteo meteo1 = listeMeteo[0];
-            temp.Text = temp.Text + meteo1.description;
-        }
+            Nouvelle new3 = listeNouvelles[9];
+            nouvelle3.Text = new3.name;
 
+            Nouvelle new4 = listeNouvelles[10];
+            nouvelle4.Text = new4.name;
 
-        public void montrerPokemon()
-        {
-            List<Pokemon> listePokemon = pokemonDAO.listerPokemon();
+            Nouvelle new5 = listeNouvelles[11];
+            nouvelle5.Text = new5.name;
 
-            Pokemon poke1 = listePokemon[0];
-            pokemon.Text = pokemon.Text + poke1.nom;
-        }
+            Nouvelle new6 = listeNouvelles[12];
+            nouvelle6.Text = new6.name;
 
-        private void montrerMonnaie()
-        {
-            List<CryptoMonnaie> listeMonnaies = ParseurCryptoMonnaie.listerMonnaies();
-            CryptoMonnaie monnaie1 = listeMonnaies[1];
-            monaie.Text = monaie.Text + monnaie1.nom;
+            Nouvelle new7 = listeNouvelles[13];
+            nouvelle7.Text = new7.name;
 
+            Nouvelle new8 = listeNouvelles[14];
+            nouvelle8.Text = new8.name;
+
+            Nouvelle new9 = listeNouvelles[15];
+            nouvelle9.Text = new9.name;
+
+            Nouvelle new10 = listeNouvelles[16];
+            nouvelle10.Text = new10.name;
         }
 
         //Fonctions reserver pour changer de fenetre
@@ -141,7 +130,5 @@ namespace ProjetAgregation.Fenetres
             App.Current.MainWindow = menu;
             this.Close();
         }
-
-
     }
 }

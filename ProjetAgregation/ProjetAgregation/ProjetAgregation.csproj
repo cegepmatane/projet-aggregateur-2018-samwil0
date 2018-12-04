@@ -74,6 +74,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Fenetres\Acueil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenetres\Amis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenetres\Chat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenetres\Email.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenetres\Graph.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenetres\Monaie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenetres\News.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenetres\Pokedex.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Fenetres\Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -123,6 +155,30 @@
     <Compile Include="Code\ParseurPokemon.cs" />
     <Compile Include="Code\Pokemon.cs" />
     <Compile Include="Code\WindowsSwitcher.cs" />
+    <Compile Include="Fenetres\Acueil.xaml.cs">
+      <DependentUpon>Acueil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fenetres\Amis.xaml.cs">
+      <DependentUpon>Amis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fenetres\Chat.xaml.cs">
+      <DependentUpon>Chat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fenetres\Email.xaml.cs">
+      <DependentUpon>Email.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fenetres\Graph.xaml.cs">
+      <DependentUpon>Graph.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fenetres\Monaie.xaml.cs">
+      <DependentUpon>Monaie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fenetres\News.xaml.cs">
+      <DependentUpon>News.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fenetres\Pokedex.xaml.cs">
+      <DependentUpon>Pokedex.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Fenetres\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>

@@ -11,69 +11,18 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using ProjetAgregation.Code;
 
 namespace ProjetAgregation.Fenetres
 {
     /// <summary>
-    /// Logique d'interaction pour Window1.xaml
+    /// Logique d'interaction pour Amis.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Amis : Window
     {
-
-
-        ParseurNews nouvelleDAO = new ParseurNews();
-        ParseurMeteo MeteoDAO = new ParseurMeteo();
-        ParseurPokemon pokemonDAO = new ParseurPokemon();
-        CryptoMonnaie cryptomonnaieDAO = new CryptoMonnaie();
-
-        public Window1()
+        public Amis()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
-            montrerNouvelles();
-            montrerMeteo();
-            montrerPokemon();
-            montrerMonnaie();
-        }
-
-
-
-        //commende pour aficher les nouvelles
-        private void montrerNouvelles()
-        {
-            string rssReddit = "https://www.reddit.com/.rss";
-            List<Nouvelle> listeNouvelles = nouvelleDAO.listerNouvelles(rssReddit);
-
-            // il faut partir au 7em element car les 6 premier ne sont pas des nouvelles
-            Nouvelle new1 = listeNouvelles[7];
-            news.Text = news.Text + new1.name;
-        }
-
-        private void montrerMeteo()
-        {
-            string meteoMediaMatane = "http://rss.meteomedia.com/weather/caqc0342";
-            List<Meteo> listeMeteo = MeteoDAO.listerMeteo(meteoMediaMatane);
-
-            Meteo meteo1 = listeMeteo[0];
-            temp.Text = temp.Text + meteo1.description;
-        }
-
-
-        public void montrerPokemon()
-        {
-            List<Pokemon> listePokemon = pokemonDAO.listerPokemon();
-
-            Pokemon poke1 = listePokemon[0];
-            pokemon.Text = pokemon.Text + poke1.nom;
-        }
-
-        private void montrerMonnaie()
-        {
-            List<CryptoMonnaie> listeMonnaies = ParseurCryptoMonnaie.listerMonnaies();
-            CryptoMonnaie monnaie1 = listeMonnaies[1];
-            monaie.Text = monaie.Text + monnaie1.nom;
-
         }
 
         //Fonctions reserver pour changer de fenetre
@@ -141,7 +90,5 @@ namespace ProjetAgregation.Fenetres
             App.Current.MainWindow = menu;
             this.Close();
         }
-
-
     }
 }

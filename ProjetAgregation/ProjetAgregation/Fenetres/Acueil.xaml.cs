@@ -16,9 +16,9 @@ using ProjetAgregation.Code;
 namespace ProjetAgregation.Fenetres
 {
     /// <summary>
-    /// Logique d'interaction pour Window1.xaml
+    /// Logique d'interaction pour Acueil.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Acueil : Window
     {
 
 
@@ -27,7 +27,8 @@ namespace ProjetAgregation.Fenetres
         ParseurPokemon pokemonDAO = new ParseurPokemon();
         CryptoMonnaie cryptomonnaieDAO = new CryptoMonnaie();
 
-        public Window1()
+
+        public Acueil()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();

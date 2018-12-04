@@ -1,0 +1,85 @@
+﻿<Window x:Class="ProjetAgregation.Fenetres.Chat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetAgregation.Fenetres"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Agregation" Height="450" Width="800" Background="Red">
+    <Grid Background="Black">
+        <Grid HorizontalAlignment="Left" Height="428" VerticalAlignment="Top" Width="55">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+            <Button Content="Menu" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Menu_Click"/>
+            <Button Content="Acueil" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Acueil_Click" Grid.Row="1"/>
+            <Button Content="Amis" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Amis_Click" Grid.Row="2"/>
+            <Button Content="Email" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Email_Click" Grid.Row="3"/>
+            <Button Content="Graph" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Graph_Click" Grid.Row="4"/>
+            <Button Content="News" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="News_Click" Grid.Row="5"/>
+            <Button Content="Chat" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Red" Click="Chat_Click" Grid.Row="6"/>
+            <Button Content="Pokemon" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Pokemon_Click" Grid.Row="7"/>
+            <Button Content="Crypto" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Crypto_Click" Grid.Row="8"/>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="63" Margin="55,0,0,0" VerticalAlignment="Top" Width="730">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250*"/>
+                <ColumnDefinition Width="250*"/>
+                <ColumnDefinition Width="250*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Chat" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="1"/>
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="{Binding Source={x:Static sys:DateTime.Now}, Mode=OneWay,  StringFormat='yyyy-MM-dd HH:mm:ss '}" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="12" TextAlignment="Center" IsReadOnly = "True" Grid.Column="0"/>
+            <TextBox HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="{Binding Source={x:Static sys:Environment.UserName}, Mode=OneWay}" VerticalAlignment="Center" Width="120" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Column="2"/>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="355" Margin="240,63,0,0" VerticalAlignment="Top" Width="550" Background="Red">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="100*"/>
+            </Grid.RowDefinitions>
+            <TextBox HorizontalAlignment="Center" Height="25" TextWrapping="Wrap" Text="Chat" VerticalAlignment="Center" Width="400" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="0"/>
+            <TextBox HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" Text="Y" VerticalAlignment="Center" Width="550" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="1"/>
+            <TextBox HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" Text="Y" VerticalAlignment="Center" Width="550" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="2"/>
+            <TextBox HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" Text="Y" VerticalAlignment="Center" Width="550" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="3"/>
+            <TextBox HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" Text="Y" VerticalAlignment="Center" Width="550" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="4"/>
+            <TextBox HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" Text="Y" VerticalAlignment="Center" Width="550" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="5"/>
+            <TextBox HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" Text="Y" VerticalAlignment="Center" Width="550" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="6"/>
+
+
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="355" Margin="55,63,0,0" VerticalAlignment="Top" Width="200" Background="Red">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="100*"/>
+            </Grid.RowDefinitions>
+            <TextBox HorizontalAlignment="Center" Height="25" TextWrapping="Wrap" Text="Salons" VerticalAlignment="Center" Width="150" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="0"/>
+            <TextBox HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" Text="X" VerticalAlignment="Center" Width="150" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="1"/>
+            <TextBox HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" Text="X" VerticalAlignment="Center" Width="150" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="2"/>
+            <TextBox HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" Text="X" VerticalAlignment="Center" Width="150" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="3"/>
+            <TextBox HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" Text="X" VerticalAlignment="Center" Width="150" Background="Goldenrod" FontSize="15" TextAlignment="Center" IsReadOnly = "True" Grid.Row="4"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
