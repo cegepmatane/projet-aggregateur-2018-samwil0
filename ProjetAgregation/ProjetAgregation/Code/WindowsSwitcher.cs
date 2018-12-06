@@ -8,18 +8,75 @@ using ProjetAgregation;
 
 namespace ProjetAgregation.Code
 {
-    class WindowsSwitcher
+    public static class WindowsSwitcher
     {
-        /*
-        //initialisation des diefferentes fenetres
-        Accueil accueil = new Accueil();
-        Amis amis = new Amis();
-        Chat chat = new Chat();
-        Crypto crypto = new Crypto();
-        Email email = new Email();
-        Graph graph = new Graph();
-        News news = new News();
-        Pokemon pokemon = new Pokemon();
-        */
+        public static string FenetreChoisie;
+        //Fonctions reserver pour changer de fenetre
+        public static void Loader(String FenetreChoisie)
+        {
+            switch (FenetreChoisie)
+            {
+                case "Menu":
+                    MainWindow menu = new MainWindow();
+                    menu.Show();
+                    App.Current.MainWindow = menu;
+                    FenetreChoisie = null;
+                    break;
+                case "Acueil":
+                    Acueil acueil = new Acueil();
+                    acueil.Show();
+                    App.Current.MainWindow = acueil;
+                    FenetreChoisie = null;
+                    break;
+                case "Amis":
+                    Amis amis = new Amis();
+                    amis.Show();
+                    App.Current.MainWindow = amis;
+                    FenetreChoisie = null;
+                    break;
+                case "Chat":
+                    Chat chat = new Chat();
+                    chat.Show();
+                    App.Current.MainWindow = chat;
+                    FenetreChoisie = null;
+                    break;
+                case "Email":
+                    Email email = new Email();
+                    email.Show();
+                    App.Current.MainWindow = email;
+                    FenetreChoisie = null;
+                    break;
+                case "Graph":
+                    Graph graph = new Graph();
+                    graph.Show();
+                    App.Current.MainWindow = graph;
+                    FenetreChoisie = null;
+                    break;
+                case "Monaie":
+                    Monaie monaie = new Monaie();
+                    monaie.Show();
+                    App.Current.MainWindow = monaie;
+                    FenetreChoisie = null;
+                    break;
+                case "News":
+                    News news = new News();
+                    news.Show();
+                    App.Current.MainWindow = news;
+                    FenetreChoisie = null;
+                    break;
+                case "Pokemon":
+                    Pokedex pokemon = new Pokedex();
+                    pokemon.Show();
+                    App.Current.MainWindow = pokemon;
+                    FenetreChoisie = null;
+                    break;
+                default:
+                    MainWindow menuEreur = new MainWindow();
+                    menuEreur.Show();
+                    App.Current.MainWindow = menuEreur;
+                    FenetreChoisie = null;
+                    break;
+            }
+        }
     }
 }

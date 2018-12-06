@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ProjetAgregation.Code;
 
 namespace ProjetAgregation.Fenetres
 {
@@ -25,70 +26,61 @@ namespace ProjetAgregation.Fenetres
             InitializeComponent();
         }
 
-        //Fonctions reserver pour changer de fenetre
+        //Fonctions reserver pour appeler le changement de fenetre
+        private void Menu_Click(object sender, RoutedEventArgs e)
+        {
+            WindowsSwitcher.Loader("Menu");
+            Console.WriteLine("La fenetre Acueil a ete loder, la presente va fermer");
+            this.Close();
+        }
         private void Acueil_Click(object sender, RoutedEventArgs e)
         {
-            Window1 acueil = new Window1();
-            acueil.Show();
-            App.Current.MainWindow = acueil;
+            WindowsSwitcher.Loader("Acueil");
+            Console.WriteLine("La fenetre Acueil a ete loder, la presente va fermer");
             this.Close();
         }
         private void Amis_Click(object sender, RoutedEventArgs e)
         {
-            Window2 amis = new Window2();
-            amis.Show();
-            App.Current.MainWindow = amis;
+            WindowsSwitcher.Loader("Amis");
+            Console.WriteLine("La fenetre Amis a ete loder, la presente va fermer");
             this.Close();
         }
         private void Email_Click(object sender, RoutedEventArgs e)
         {
-            Window3 email = new Window3();
-            email.Show();
-            App.Current.MainWindow = email;
+            WindowsSwitcher.Loader("Email");
+            Console.WriteLine("La fenetre Email a ete loder, la presente va fermer");
             this.Close();
         }
         private void Graph_Click(object sender, RoutedEventArgs e)
         {
-            Window4 graph = new Window4();
-            graph.Show();
-            App.Current.MainWindow = graph;
+            WindowsSwitcher.Loader("Graph");
+            Console.WriteLine("La fenetre Graph a ete loder, la presente va fermer");
             this.Close();
         }
         private void News_Click(object sender, RoutedEventArgs e)
         {
-            Window5 news = new Window5();
-            news.Show();
-            App.Current.MainWindow = news;
+            WindowsSwitcher.Loader("News");
+            Console.WriteLine("La fenetre News a ete loder, la presente va fermer");
             this.Close();
         }
         private void Chat_Click(object sender, RoutedEventArgs e)
         {
-            Window6 chat = new Window6();
-            chat.Show();
-            App.Current.MainWindow = chat;
+            WindowsSwitcher.Loader("Chat");
+            Console.WriteLine("La fenetre Chat a ete loder, la presente va fermer");
             this.Close();
         }
         private void Pokemon_Click(object sender, RoutedEventArgs e)
         {
-            Window7 pokemon = new Window7();
-            pokemon.Show();
-            App.Current.MainWindow = pokemon;
+            WindowsSwitcher.Loader("Pokemon");
+            Console.WriteLine("La fenetre Pokemon a ete loder, la presente va fermer");
             this.Close();
         }
         private void Crypto_Click(object sender, RoutedEventArgs e)
         {
-            Window8 crypto = new Window8();
-            crypto.Show();
-            App.Current.MainWindow = crypto;
+            WindowsSwitcher.Loader("Monaie");
+            Console.WriteLine("La fenetre Monaie a ete loder, la presente va fermer");
             this.Close();
         }
 
-        private void Menu_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow menu = new MainWindow();
-            menu.Show();
-            App.Current.MainWindow = menu;
-            this.Close();
-        }
     }
 }
