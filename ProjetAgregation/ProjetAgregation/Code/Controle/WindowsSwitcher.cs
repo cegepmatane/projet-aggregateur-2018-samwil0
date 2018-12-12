@@ -14,6 +14,7 @@ namespace ProjetAgregation.Code
         //Fonctions reserver pour changer de fenetre
         public static void Loader(String FenetreChoisie)
         {
+            Console.WriteLine("La fenetre choisie et charger est " + FenetreChoisie);
             switch (FenetreChoisie)
             {
                 case "Menu":
@@ -75,6 +76,7 @@ namespace ProjetAgregation.Code
                     menuEreur.Show();
                     App.Current.MainWindow = menuEreur;
                     FenetreChoisie = null;
+                    Console.WriteLine("Erreur dans les choix de fenetre, retour au menu");
                     break;
             }
         }

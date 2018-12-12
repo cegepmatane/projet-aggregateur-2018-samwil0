@@ -114,15 +114,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Code\Meteo.cs" />
-    <Compile Include="Code\ParseurCryptoMonnaie.cs" />
-    <Compile Include="Code\CryptoMonnaie.cs" />
-    <Compile Include="Code\Nouvelle.cs" />
-    <Compile Include="Code\ParseurMeteo.cs" />
-    <Compile Include="Code\ParseurNews.cs" />
-    <Compile Include="Code\ParseurPokemon.cs" />
-    <Compile Include="Code\Pokemon.cs" />
-    <Compile Include="Code\WindowsSwitcher.cs" />
+    <Compile Include="Code\Controle\ControleDesDonnesRecus.cs" />
+    <Compile Include="Code\Modelle\Meteo.cs" />
+    <Compile Include="Code\Parseur\ParseurCryptoMonnaie.cs" />
+    <Compile Include="Code\Modelle\CryptoMonnaie.cs" />
+    <Compile Include="Code\Modelle\Nouvelle.cs" />
+    <Compile Include="Code\Parseur\ParseurMeteo.cs" />
+    <Compile Include="Code\Parseur\ParseurNews.cs" />
+    <Compile Include="Code\Parseur\ParseurPokemon.cs" />
+    <Compile Include="Code\Modelle\Pokemon.cs" />
+    <Compile Include="Code\Controle\WindowsSwitcher.cs" />
     <Compile Include="Fenetres\Acueil.xaml.cs">
       <DependentUpon>Acueil.xaml</DependentUpon>
     </Compile>
@@ -190,5 +191,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

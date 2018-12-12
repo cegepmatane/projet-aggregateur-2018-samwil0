@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using ProjetAgregation.Code;
+using ProjetAgregation.Code.Controle;
 
 namespace ProjetAgregation.Fenetres
 {
@@ -20,29 +21,12 @@ namespace ProjetAgregation.Fenetres
     /// </summary>
     public partial class Pokedex : Window
     {
-        ParseurPokemon pokemonDAO = new ParseurPokemon();
+        ControleDesDonnesRecus ControleDesDonnesRecus = new ControleDesDonnesRecus();
         public Pokedex()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
-            montrerPokemon();
-        }
-
-        public void montrerPokemon()
-        {
-            List<Pokemon> listePokemon = pokemonDAO.listerPokemon();
-
-            Pokemon poke1 = listePokemon[0];
-            pokemonTrouver1.Text = poke1.nom;
-
-            Pokemon poke2 = listePokemon[1];
-            pokemonTrouver2.Text = poke2.nom;
-
-            Pokemon poke3 = listePokemon[2];
-            pokemonTrouver3.Text = poke3.nom;
-
-            Pokemon poke4 = listePokemon[3];
-            pokemonTrouver4.Text = poke4.nom;
+            ControleDesDonnesRecus.MontrerPokemon(this);
         }
 
 

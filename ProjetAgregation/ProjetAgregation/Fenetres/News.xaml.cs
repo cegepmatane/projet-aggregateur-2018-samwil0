@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using ProjetAgregation.Code;
+using ProjetAgregation.Code.Controle;
+
 
 namespace ProjetAgregation.Fenetres
 {
@@ -20,49 +22,13 @@ namespace ProjetAgregation.Fenetres
     /// </summary>
     public partial class News : Window
     {
-        ParseurNews nouvelleDAO = new ParseurNews();
+        ControleDesDonnesRecus ControleDesDonnesRecus = new ControleDesDonnesRecus();
+
         public News()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
-            montrerNouvelles();
-        }
-        //commende pour aficher les nouvelles
-        private void montrerNouvelles()
-        {
-            string rssReddit = "https://www.reddit.com/.rss";
-            List<Nouvelle> listeNouvelles = nouvelleDAO.listerNouvelles(rssReddit);
-
-            // il faut partir au 7em element car les 6 premier ne sont pas des nouvelles
-            Nouvelle new1 = listeNouvelles[7];
-            nouvelle1.Text = new1.name;
-
-            Nouvelle new2 = listeNouvelles[8];
-            nouvelle2.Text = new2.name;
-
-            Nouvelle new3 = listeNouvelles[9];
-            nouvelle3.Text = new3.name;
-
-            Nouvelle new4 = listeNouvelles[10];
-            nouvelle4.Text = new4.name;
-
-            Nouvelle new5 = listeNouvelles[11];
-            nouvelle5.Text = new5.name;
-
-            Nouvelle new6 = listeNouvelles[12];
-            nouvelle6.Text = new6.name;
-
-            Nouvelle new7 = listeNouvelles[13];
-            nouvelle7.Text = new7.name;
-
-            Nouvelle new8 = listeNouvelles[14];
-            nouvelle8.Text = new8.name;
-
-            Nouvelle new9 = listeNouvelles[15];
-            nouvelle9.Text = new9.name;
-
-            Nouvelle new10 = listeNouvelles[16];
-            nouvelle10.Text = new10.name;
+            ControleDesDonnesRecus.MontrerNouvelles(this);
         }
 
         //Fonctions reserver pour appeler le changement de fenetre

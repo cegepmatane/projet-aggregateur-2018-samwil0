@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using ProjetAgregation.Code;
+using ProjetAgregation.Code.Controle;
 
 namespace ProjetAgregation.Fenetres
 {
@@ -20,25 +21,18 @@ namespace ProjetAgregation.Fenetres
     /// </summary>
     public partial class Graph : Window
     {
+        ControleDesDonnesRecus ControleDesDonnesRecus = new ControleDesDonnesRecus();
 
-        ParseurMeteo MeteoDAO = new ParseurMeteo();
 
 
         public Graph()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
-            montrerMeteo();
+            ControleDesDonnesRecus.MontrerMeteo(this);
         }
 
-        private void montrerMeteo()
-        {
-            string meteoMediaMatane = "http://rss.meteomedia.com/weather/caqc0342";
-            List<Meteo> listeMeteo = MeteoDAO.listerMeteo(meteoMediaMatane);
 
-            Meteo meteo1 = listeMeteo[0];
-            donnee.Text = meteo1.description;
-        }
 
         //Fonctions reserver pour appeler le changement de fenetre
         private void Menu_Click(object sender, RoutedEventArgs e)

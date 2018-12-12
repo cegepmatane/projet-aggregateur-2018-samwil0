@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using ProjetAgregation.Code;
+using ProjetAgregation.Code.Controle;
 
 namespace ProjetAgregation.Fenetres
 {
@@ -20,25 +21,13 @@ namespace ProjetAgregation.Fenetres
     /// </summary>
     public partial class Monaie : Window
     {
-
-        CryptoMonnaie cryptomonnaieDAO = new CryptoMonnaie();
-
+        ControleDesDonnesRecus ControleDesDonnesRecus = new ControleDesDonnesRecus();
 
         public Monaie()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
-            montrerMonnaie();
-        }
-
-
-        private void montrerMonnaie()
-        {
-            List<CryptoMonnaie> listeMonnaies = ParseurCryptoMonnaie.listerMonnaies();
-            CryptoMonnaie monnaie1 = listeMonnaies[1];
-            monnaieSuivie.Text = monnaie1.nom;
-            monnaieInfo.Text = "Symbole : " + monnaie1.symbole + "  // Algorithme : " + monnaie1.algorithme;
-            monnaieNombre.Text = "Nombre existant : " + monnaie1.nombre;
+            ControleDesDonnesRecus.MontrerMonnaie(this);
         }
 
         //Fonctions reserver pour appeler le changement de fenetre

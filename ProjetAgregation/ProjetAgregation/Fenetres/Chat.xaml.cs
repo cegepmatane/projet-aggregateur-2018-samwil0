@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using ProjetAgregation.Code;
+using ProjetAgregation.Code.Controle;
 
 namespace ProjetAgregation.Fenetres
 {
@@ -20,6 +21,9 @@ namespace ProjetAgregation.Fenetres
     /// </summary>
     public partial class Chat : Window
     {
+
+        ControleDesDonnesRecus ControleDesDonnesRecus = new ControleDesDonnesRecus();
+
         public Chat()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
