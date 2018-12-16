@@ -10,9 +10,21 @@ using System.Xml.Linq;
 
 namespace ProjetAgregation.Code
 {
-    class ParseurMeteo
+    class MeteoDAO
     {
-        public List<Meteo> listerMeteo(string rss)
+        string meteoMediaAccueil = "http://rss.meteomedia.com/weather/caqc0342";
+        string meteoMediaMatane = "http://rss.meteomedia.com/weather/caqc0342";
+        public List<Meteo> listerMeteoMatane()
+        {
+            return listerMeteoGenerique(meteoMediaMatane);
+        }
+
+        public List<Meteo> listerMeteoAccueil()
+        {
+            return listerMeteoGenerique(meteoMediaAccueil);
+        }
+
+        public List<Meteo> listerMeteoGenerique(string rss)
         {
             List<Meteo> listeMeteo = new List<Meteo>();
             HttpWebRequest requeteMeteo = (HttpWebRequest)WebRequest.Create(rss);

@@ -34,7 +34,7 @@ namespace ProjetAgregation.Fenetres
         private void Menu_Click(object sender, RoutedEventArgs e)
         {
             WindowsSwitcher.Loader("Menu");
-            Console.WriteLine("La fenetre Acueil a ete loder, la presente va fermer");
+            Console.WriteLine("La fenetre Menu a ete loder, la presente va fermer");
             this.Close();
         }
         private void Acueil_Click(object sender, RoutedEventArgs e)

@@ -90,19 +90,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Fenetres\Graph.xaml">
+    <Page Include="Fenetres\MeteoVue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Fenetres\Monaie.xaml">
+    <Page Include="Fenetres\MonnaieVue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Fenetres\News.xaml">
+    <Page Include="Fenetres\NouvelleVue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Fenetres\Pokedex.xaml">
+    <Page Include="Fenetres\PokemonVue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -116,12 +116,12 @@
     </Compile>
     <Compile Include="Code\Controle\ControleDesDonnesRecus.cs" />
     <Compile Include="Code\Modelle\Meteo.cs" />
-    <Compile Include="Code\Parseur\ParseurCryptoMonnaie.cs" />
+    <Compile Include="Code\Parseur\CryptoMonnaieDAO.cs" />
     <Compile Include="Code\Modelle\CryptoMonnaie.cs" />
     <Compile Include="Code\Modelle\Nouvelle.cs" />
-    <Compile Include="Code\Parseur\ParseurMeteo.cs" />
-    <Compile Include="Code\Parseur\ParseurNews.cs" />
-    <Compile Include="Code\Parseur\ParseurPokemon.cs" />
+    <Compile Include="Code\Parseur\MeteoDAO.cs" />
+    <Compile Include="Code\Parseur\NouvellesDAO.cs" />
+    <Compile Include="Code\Parseur\PokemonDAO.cs" />
     <Compile Include="Code\Modelle\Pokemon.cs" />
     <Compile Include="Code\Controle\WindowsSwitcher.cs" />
     <Compile Include="Fenetres\Acueil.xaml.cs">
@@ -136,17 +136,17 @@
     <Compile Include="Fenetres\Email.xaml.cs">
       <DependentUpon>Email.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Fenetres\Graph.xaml.cs">
-      <DependentUpon>Graph.xaml</DependentUpon>
+    <Compile Include="Fenetres\MeteoVue.xaml.cs">
+      <DependentUpon>MeteoVue.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Fenetres\Monaie.xaml.cs">
-      <DependentUpon>Monaie.xaml</DependentUpon>
+    <Compile Include="Fenetres\MonnaieVue.xaml.cs">
+      <DependentUpon>MonnaieVue.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Fenetres\News.xaml.cs">
-      <DependentUpon>News.xaml</DependentUpon>
+    <Compile Include="Fenetres\NouvelleVue.xaml.cs">
+      <DependentUpon>NouvelleVue.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Fenetres\Pokedex.xaml.cs">
-      <DependentUpon>Pokedex.xaml</DependentUpon>
+    <Compile Include="Fenetres\PokemonVue.xaml.cs">
+      <DependentUpon>PokemonVue.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

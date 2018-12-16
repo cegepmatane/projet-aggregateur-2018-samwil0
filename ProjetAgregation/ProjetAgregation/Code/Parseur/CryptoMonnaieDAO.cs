@@ -19,7 +19,7 @@ using System.Web.UI;
 
 namespace ProjetAgregation.Code
 {
-    class ParseurCryptoMonnaie
+    class CryptoMonnaieDAO
     {
         static public List<CryptoMonnaie> listerMonnaies()
         {

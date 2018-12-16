@@ -10,12 +10,13 @@ using System.Xml.Linq;
 
 namespace ProjetAgregation.Code
 {
-    class ParseurNews
+    class NouvellesDAO
     {
-        public List<Nouvelle> listerNouvelles(string rss)
+        string rssReddit = "https://www.reddit.com/.rss";
+        public List<Nouvelle> listerNouvelles()
         {
             List<Nouvelle> listeNouvelles = new List<Nouvelle>();
-            HttpWebRequest requeteNouvelles = (HttpWebRequest)WebRequest.Create(rss);
+            HttpWebRequest requeteNouvelles = (HttpWebRequest)WebRequest.Create(rssReddit);
             requeteNouvelles.Method = "GET";
             requeteNouvelles.UserAgent = "Mozilla Firefox";
             WebResponse reponse = requeteNouvelles.GetResponse();

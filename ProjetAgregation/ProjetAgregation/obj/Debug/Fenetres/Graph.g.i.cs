@@ -38,7 +38,7 @@ namespace ProjetAgregation.Fenetres {
     /// <summary>
     /// Graph
     /// </summary>
-    public partial class Graph : System.Windows.Window, System.Windows.Markup.IComponentConnector {
+    public partial class MeteoVue : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
         #line 53 "..\..\..\Fenetres\Graph.xaml"

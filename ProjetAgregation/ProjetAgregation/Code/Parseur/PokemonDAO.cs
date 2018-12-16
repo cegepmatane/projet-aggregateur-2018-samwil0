@@ -9,7 +9,7 @@ using System.IO;
 
 namespace ProjetAgregation.Code
 {
-    class ParseurPokemon
+    class PokemonDAO
     {
         public List<Pokemon> listerPokemon()
         {

@@ -17,16 +17,27 @@ using ProjetAgregation.Code.Controle;
 namespace ProjetAgregation.Fenetres
 {
     /// <summary>
-    /// Logique d'interaction pour Pokedex.xaml
+    /// Logique d'interaction pour Monaie.xaml
     /// </summary>
-    public partial class Pokedex : Window
+    public partial class MonnaieVue : Window
     {
-        ControleDesDonnesRecus ControleDesDonnesRecus = new ControleDesDonnesRecus();
-        public Pokedex()
+        ControleDesDonnesRecus controleDesDonnesRecus = new ControleDesDonnesRecus();
+
+        public MonnaieVue()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
-            ControleDesDonnesRecus.MontrerPokemon(this);
+            controleDesDonnesRecus.activerVueMonnaie(this);
+        }
+
+
+        public void montrerMonnaie(List<CryptoMonnaie> listeMonnaies)
+        {
+            CryptoMonnaie monnaie1 = listeMonnaies[1];
+            this.monnaieSuivie.Text = monnaie1.nom;
+            this.monnaieInfo.Text = "Symbole : " + monnaie1.symbole + "  // Algorithme : " + monnaie1.algorithme;
+            this.monnaieNombre.Text = "Nombre existant : " + monnaie1.nombre;
+            Console.WriteLine("Monaie ajouter dans les TextBox");
         }
 
 
@@ -34,7 +45,7 @@ namespace ProjetAgregation.Fenetres
         private void Menu_Click(object sender, RoutedEventArgs e)
         {
             WindowsSwitcher.Loader("Menu");
-            Console.WriteLine("La fenetre Acueil a ete loder, la presente va fermer");
+            Console.WriteLine("La fenetre Menu a ete loder, la presente va fermer");
             this.Close();
         }
         private void Acueil_Click(object sender, RoutedEventArgs e)

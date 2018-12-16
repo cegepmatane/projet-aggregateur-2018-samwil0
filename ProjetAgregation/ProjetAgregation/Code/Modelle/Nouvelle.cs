@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetAgregation.Code
 {
-    class Nouvelle
+    public class Nouvelle
     {
         public string name { get; set; }
         public string img { get; set; }

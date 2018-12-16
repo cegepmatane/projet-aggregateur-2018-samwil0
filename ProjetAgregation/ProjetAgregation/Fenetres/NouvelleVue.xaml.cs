@@ -20,22 +20,60 @@ namespace ProjetAgregation.Fenetres
     /// <summary>
     /// Logique d'interaction pour News.xaml
     /// </summary>
-    public partial class News : Window
+    public partial class NouvelleVue : Window
     {
         ControleDesDonnesRecus ControleDesDonnesRecus = new ControleDesDonnesRecus();
 
-        public News()
+        public NouvelleVue()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
-            ControleDesDonnesRecus.MontrerNouvelles(this);
+            ControleDesDonnesRecus.activerVueNouvelle(this);
         }
+
+
+        public void montrerNouvelle(List<Nouvelle> listeNouvelles)
+        {
+            // il faut partir au 7em element car les 6 premier ne sont pas des nouvelles
+            Nouvelle new1 = listeNouvelles[7];
+            this.nouvelle1.Text = new1.name;
+
+            Nouvelle new2 = listeNouvelles[8];
+            this.nouvelle2.Text = new2.name;
+
+            Nouvelle new3 = listeNouvelles[9];
+            this.nouvelle3.Text = new3.name;
+
+            Nouvelle new4 = listeNouvelles[10];
+            this.nouvelle4.Text = new4.name;
+
+            Nouvelle new5 = listeNouvelles[11];
+            this.nouvelle5.Text = new5.name;
+
+            Nouvelle new6 = listeNouvelles[12];
+            this.nouvelle6.Text = new6.name;
+
+            Nouvelle new7 = listeNouvelles[13];
+            this.nouvelle7.Text = new7.name;
+
+            Nouvelle new8 = listeNouvelles[14];
+            this.nouvelle8.Text = new8.name;
+
+            Nouvelle new9 = listeNouvelles[15];
+            this.nouvelle9.Text = new9.name;
+
+            Nouvelle new10 = listeNouvelles[16];
+            this.nouvelle10.Text = new10.name;
+
+            Console.WriteLine("Nouvelles ajouter dans les TextBox");
+        }
+
 
         //Fonctions reserver pour appeler le changement de fenetre
         private void Menu_Click(object sender, RoutedEventArgs e)
         {
             WindowsSwitcher.Loader("Menu");
-            Console.WriteLine("La fenetre Acueil a ete loder, la presente va fermer");
+            Console.WriteLine("La fenetre Menu a ete loder, la presente va fermer");
             this.Close();
         }
         private void Acueil_Click(object sender, RoutedEventArgs e)

@@ -48,25 +48,25 @@ namespace ProjetAgregation.Code
                     FenetreChoisie = null;
                     break;
                 case "Graph":
-                    Graph graph = new Graph();
+                    MeteoVue graph = new MeteoVue();
                     graph.Show();
                     App.Current.MainWindow = graph;
                     FenetreChoisie = null;
                     break;
                 case "Monaie":
-                    Monaie monaie = new Monaie();
+                    MonnaieVue monaie = new MonnaieVue();
                     monaie.Show();
                     App.Current.MainWindow = monaie;
                     FenetreChoisie = null;
                     break;
                 case "News":
-                    News news = new News();
+                    NouvelleVue news = new NouvelleVue();
                     news.Show();
                     App.Current.MainWindow = news;
                     FenetreChoisie = null;
                     break;
                 case "Pokemon":
-                    Pokedex pokemon = new Pokedex();
+                    PokemonVue pokemon = new PokemonVue();
                     pokemon.Show();
                     App.Current.MainWindow = pokemon;
                     FenetreChoisie = null;

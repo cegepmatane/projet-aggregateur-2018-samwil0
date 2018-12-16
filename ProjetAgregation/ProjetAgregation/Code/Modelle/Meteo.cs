@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetAgregation.Code
 {
-    class Meteo
+    public class Meteo
     {
        // public string title { get; set; }
         public string description { get; set; }

@@ -19,26 +19,33 @@ namespace ProjetAgregation.Fenetres
     /// <summary>
     /// Logique d'interaction pour Graph.xaml
     /// </summary>
-    public partial class Graph : Window
+    public partial class MeteoVue : Window
     {
         ControleDesDonnesRecus ControleDesDonnesRecus = new ControleDesDonnesRecus();
 
 
 
-        public Graph()
+        public MeteoVue()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
-            ControleDesDonnesRecus.MontrerMeteo(this);
+            ControleDesDonnesRecus.notifierMeteo(this);
         }
 
+        public void montrerMeteo(List<Meteo> listeMeteo)
+        {
+            Meteo meteo1 = listeMeteo[0];
+            this.donnee.Text = meteo1.description;
+            Console.WriteLine("Meteo ajouter dans les TextBox");
+        }
+        
 
 
         //Fonctions reserver pour appeler le changement de fenetre
         private void Menu_Click(object sender, RoutedEventArgs e)
         {
             WindowsSwitcher.Loader("Menu");
-            Console.WriteLine("La fenetre Acueil a ete loder, la presente va fermer");
+            Console.WriteLine("La fenetre Menu a ete loder, la presente va fermer");
             this.Close();
         }
         private void Acueil_Click(object sender, RoutedEventArgs e)

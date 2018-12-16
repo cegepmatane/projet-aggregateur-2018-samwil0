@@ -21,23 +21,50 @@ namespace ProjetAgregation.Fenetres
     /// </summary>
     public partial class Acueil : Window
     {
-        ControleDesDonnesRecus ControleDesDonnesRecus = new ControleDesDonnesRecus();
+        ControleDesDonnesRecus controleDonnees = null;
 
         public Acueil()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
-            ControleDesDonnesRecus.MontrerNouvellesAcueil(this);
-            ControleDesDonnesRecus.MontrerMeteoAcueil(this);
-            ControleDesDonnesRecus.MontrerPokemonAcueil(this);
-            ControleDesDonnesRecus.MontrerMonnaieAcueil(this);
+            this.controleDonnees = new ControleDesDonnesRecus();
+            this.controleDonnees.activerVueAccueil(this);
+        }
+
+        public void montrerMeteo(List<Meteo> listeMeteo)
+        {
+            Meteo meteo1 = listeMeteo[0];
+            this.temp.Text = this.temp.Text + meteo1.description;
+            Console.WriteLine("Meteo ajouter dans la TextBox");
+        }
+
+        public void montrerCrypto(List<CryptoMonnaie> listeMonnaies)
+        {
+            CryptoMonnaie monnaie1 = listeMonnaies[1];
+            this.monaie.Text = this.monaie.Text + monnaie1.nom;
+            Console.WriteLine("Monaie ajouter dans la TextBox");
+        }
+
+        public void montrerPokemon(List<Pokemon> listePokemon)
+        {
+            Pokemon poke1 = listePokemon[0];
+            this.pokemon.Text = this.pokemon.Text + poke1.nom;
+            Console.WriteLine("Pokemon ajouter dans la TextBox");
+        }
+
+        public void montrerNouvelles(List<Nouvelle> listeNouvelles)
+        {
+            // il faut partir au 7em element car les 6 premier ne sont pas des nouvelles
+            Nouvelle new1 = listeNouvelles[7];
+            this.news.Text = this.news.Text + new1.name;
+            Console.WriteLine("Nouvelle ajouter dans la TextBox");
         }
 
         //Fonctions reserver pour appeler le changement de fenetre
         private void Menu_Click(object sender, RoutedEventArgs e)
         {
             WindowsSwitcher.Loader("Menu");
-            Console.WriteLine("La fenetre Acueil a ete loder, la presente va fermer");
+            Console.WriteLine("La fenetre Menu a ete loder, la presente va fermer");
             this.Close();
         }
         private void Acueil_Click(object sender, RoutedEventArgs e)

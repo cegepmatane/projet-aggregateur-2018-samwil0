@@ -38,7 +38,7 @@ namespace ProjetAgregation.Fenetres {
     /// <summary>
     /// Pokedex
     /// </summary>
-    public partial class Pokedex : System.Windows.Window, System.Windows.Markup.IComponentConnector {
+    public partial class PokemonVue : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
         #line 61 "..\..\..\Fenetres\Pokedex.xaml"
