@@ -29,6 +29,7 @@
             <Button Content="Chat" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Chat_Click" Grid.Row="6"/>
             <Button Content="Pokemon" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Pokemon_Click" Grid.Row="7"/>
             <Button Content="Crypto" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Crypto_Click" Grid.Row="8"/>
+            <Button Margin="0,0,-100,0" Content="Favoris" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris_Click" Grid.Row="0"/>
         </Grid>
 
         <Grid HorizontalAlignment="Left" Height="63" Margin="55,0,0,0" VerticalAlignment="Top" Width="730">
@@ -57,33 +58,43 @@
             </Grid.RowDefinitions>
             <TextBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle1" IsReadOnly = "True" Background="Goldenrod"/>
             <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg1"/>
+            <Button Content="Fav" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris1_Click" Grid.Row="0" Grid.Column="0"/>
 
             <TextBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle2" IsReadOnly = "True" Background="Goldenrod"/>
             <Image Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg2"/>
+            <Button Content="Fav" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris2_Click" Grid.Row="0" Grid.Column="1"/>
 
             <TextBox Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle3" IsReadOnly = "True" Background="Goldenrod"/>
             <Image Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg3"/>
+            <Button Content="Fav" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris3_Click" Grid.Row="0" Grid.Column="2"/>
 
             <TextBox Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle4" IsReadOnly = "True" Background="Goldenrod"/>
             <Image Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg4"/>
+            <Button Content="Fav" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris4_Click" Grid.Row="0" Grid.Column="3"/>
 
             <TextBox Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle5" IsReadOnly = "True" Background="Goldenrod"/>
             <Image Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg5"/>
+            <Button Content="Fav" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris5_Click" Grid.Row="0" Grid.Column="4"/>
 
             <TextBox Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle6" IsReadOnly = "True" Background="Goldenrod"/>
             <Image Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg6"/>
+            <Button Content="Fav" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris6_Click" Grid.Row="1" Grid.Column="0"/>
 
             <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle7" IsReadOnly = "True" Background="Goldenrod"/>
             <Image Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg7"/>
+            <Button Content="Fav" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris7_Click" Grid.Row="1" Grid.Column="1"/>
 
             <TextBox Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle8" IsReadOnly = "True" Background="Goldenrod"/>
             <Image Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg8"/>
+            <Button Content="Fav" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris8_Click" Grid.Row="1" Grid.Column="2"/>
 
             <TextBox Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle9" IsReadOnly = "True" Background="Goldenrod"/>
             <Image Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg9"/>
+            <Button Content="Fav" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris9_Click" Grid.Row="1" Grid.Column="3"/>
 
             <TextBox Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" Text="Nouvelle" VerticalAlignment="Center" Width="120" Margin="0,125,0.0,0" TextAlignment="Center" Name="nouvelle10" IsReadOnly = "True" Background="Goldenrod"/>
             <Image Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100" Margin="-100,-150,0,0.0" Name="nouvelleImg10"/>
+            <Button Content="Fav" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40" Background="Goldenrod" Click="Favoris10_Click" Grid.Row="1" Grid.Column="4"/>
 
 
         </Grid>

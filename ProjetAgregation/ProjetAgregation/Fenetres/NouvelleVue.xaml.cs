@@ -23,12 +23,62 @@ namespace ProjetAgregation.Fenetres
     public partial class NouvelleVue : Window
     {
         ControleDesDonnesRecus ControleDesDonnesRecus = new ControleDesDonnesRecus();
+        ControleDesFavoris ControleDesFavoris = new ControleDesFavoris();
 
         public NouvelleVue()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
             ControleDesDonnesRecus.activerVueNouvelle(this);
+        }
+
+
+        public ControleDesFavoris GetCtrlFav()
+        {
+            return this.ControleDesFavoris;
+        }
+
+
+        //section pour l'ajout de favoris
+        private void Favoris1_Click(object sender, RoutedEventArgs e)
+        {
+            ControleDesFavoris.ajouterFavoris(nouvelle1.Text);
+        }
+        private void Favoris2_Click(object sender, RoutedEventArgs e)
+        {
+            ControleDesFavoris.ajouterFavoris(nouvelle2.Text);
+        }
+        private void Favoris3_Click(object sender, RoutedEventArgs e)
+        {
+            ControleDesFavoris.ajouterFavoris(nouvelle3.Text);
+        }
+        private void Favoris4_Click(object sender, RoutedEventArgs e)
+        {
+            ControleDesFavoris.ajouterFavoris(nouvelle4.Text);
+        }
+        private void Favoris5_Click(object sender, RoutedEventArgs e)
+        {
+            ControleDesFavoris.ajouterFavoris(nouvelle5.Text);
+        }
+        private void Favoris6_Click(object sender, RoutedEventArgs e)
+        {
+            ControleDesFavoris.ajouterFavoris(nouvelle6.Text);
+        }
+        private void Favoris7_Click(object sender, RoutedEventArgs e)
+        {
+            ControleDesFavoris.ajouterFavoris(nouvelle7.Text);
+        }
+        private void Favoris8_Click(object sender, RoutedEventArgs e)
+        {
+            ControleDesFavoris.ajouterFavoris(nouvelle8.Text);
+        }
+        private void Favoris9_Click(object sender, RoutedEventArgs e)
+        {
+            ControleDesFavoris.ajouterFavoris(nouvelle9.Text);
+        }
+        private void Favoris10_Click(object sender, RoutedEventArgs e)
+        {
+            ControleDesFavoris.ajouterFavoris(nouvelle10.Text);
         }
 
 
@@ -122,6 +172,17 @@ namespace ProjetAgregation.Fenetres
         {
             WindowsSwitcher.Loader("Monaie");
             Console.WriteLine("La fenetre Monaie a ete loder, la presente va fermer");
+            this.Close();
+        }
+
+
+
+
+        //bouton experimentale pour les favoris
+        private void Favoris_Click(object sender, RoutedEventArgs e)
+        {
+            WindowsSwitcher.LoaderFavoris(this);
+            Console.WriteLine("La fenetre Favoris a ete loder, la presente va fermer");
             this.Close();
         }
 

@@ -29,3 +29,7 @@ C:\Users\1634370\Desktop\Travail cegep\Session 3\420-354-MT PROGRAMMATION OBJET\
 C:\Users\1634370\Desktop\Travail cegep\Session 3\420-354-MT PROGRAMMATION OBJET\Tp2\ProjetAgregation\ProjetAgregation\obj\Debug\Fenetres\MonnaieVue.baml
 C:\Users\1634370\Desktop\Travail cegep\Session 3\420-354-MT PROGRAMMATION OBJET\Tp2\ProjetAgregation\ProjetAgregation\obj\Debug\Fenetres\PokemonVue.g.cs
 C:\Users\1634370\Desktop\Travail cegep\Session 3\420-354-MT PROGRAMMATION OBJET\Tp2\ProjetAgregation\ProjetAgregation\obj\Debug\Fenetres\PokemonVue.baml
+C:\Users\1634370\Desktop\Travail cegep\Session 3\420-354-MT PROGRAMMATION OBJET\Tp2\ProjetAgregation\ProjetAgregation\obj\Debug\Fenetres\Filtre.g.cs
+C:\Users\1634370\Desktop\Travail cegep\Session 3\420-354-MT PROGRAMMATION OBJET\Tp2\ProjetAgregation\ProjetAgregation\obj\Debug\Fenetres\Filtre.baml
+C:\Users\1634370\Desktop\Travail cegep\Session 3\420-354-MT PROGRAMMATION OBJET\Tp2\ProjetAgregation\ProjetAgregation\obj\Debug\Fenetres\FavorisVue.g.cs
+C:\Users\1634370\Desktop\Travail cegep\Session 3\420-354-MT PROGRAMMATION OBJET\Tp2\ProjetAgregation\ProjetAgregation\obj\Debug\Fenetres\FavorisVue.baml

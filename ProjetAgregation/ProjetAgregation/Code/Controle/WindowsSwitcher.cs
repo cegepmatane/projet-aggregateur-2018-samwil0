@@ -79,6 +79,25 @@ namespace ProjetAgregation.Code
                     Console.WriteLine("Erreur dans les choix de fenetre, retour au menu");
                     break;
             }
+
+
+
         }
+
+
+
+        public static void LoaderFavoris(NouvelleVue vue)
+        {
+            {
+                FavorisVue favoris = new FavorisVue();
+                favoris.Show();
+                App.Current.MainWindow = favoris;
+                favoris.ControleDesFavoris = vue.GetCtrlFav();
+                favoris.montrerFavoris();
+            }
+        }
+
+
+
     }
 }
