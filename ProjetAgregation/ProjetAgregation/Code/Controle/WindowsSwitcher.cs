@@ -85,7 +85,7 @@ namespace ProjetAgregation.Code
         }
 
 
-
+        //reserver pour loder favoris et filtre pour le tp3
         public static void LoaderFavoris(NouvelleVue vue)
         {
             {
@@ -96,7 +96,21 @@ namespace ProjetAgregation.Code
                 favoris.montrerFavoris();
             }
         }
+        public static void LoaderFiltre(FavorisVue vue)
+        {
+            {
+                FiltreVue filtrer = new FiltreVue();
+                filtrer.Show();
+                App.Current.MainWindow = filtrer;
+                filtrer.ControleDesFavoris = vue.GetCtrlFav();
 
+                filtrer.ControleDesFiltres.letreFiltre = vue.GetLetreAFiltrer();
+                filtrer.ControleDesFiltres.SetListFavoris(filtrer.ControleDesFavoris.listFavoris);
+                filtrer.ControleDesFiltres.Filtrer();
+
+                filtrer.montrerFiltres();
+            }
+        }
 
 
     }

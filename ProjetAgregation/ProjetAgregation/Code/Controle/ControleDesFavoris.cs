@@ -19,5 +19,10 @@ namespace ProjetAgregation.Code.Controle
             listFavoris.Add(favoris);
         }
 
+        public List<Favoris> GetListFavoris()
+        {
+            return this.listFavoris;
+        }
+
     }
 }

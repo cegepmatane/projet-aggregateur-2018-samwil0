@@ -17,71 +17,63 @@ using ProjetAgregation.Code.Controle;
 namespace ProjetAgregation.Fenetres
 {
     /// <summary>
-    /// Logique d'interaction pour FavorisVue.xaml
+    /// Logique d'interaction pour FiltreVue.xaml
     /// </summary>
-    public partial class FavorisVue : Window
+    public partial class FiltreVue : Window
     {
-        public ControleDesFavoris ControleDesFavoris;
 
-        public FavorisVue()
+        public ControleDesFavoris ControleDesFavoris;
+        public ControleDesFiltres ControleDesFiltres = new ControleDesFiltres();
+
+        public FiltreVue()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
         }
 
-        public ControleDesFavoris GetCtrlFav()
+
+
+        public void montrerFiltres()
         {
-            return this.ControleDesFavoris;
-        }
-
-
-        public string GetLetreAFiltrer()
-        {
-            return this.letreAFiltrer.Text;
-        }
-
-
-        public void montrerFavoris()
-        {
-            if (ControleDesFavoris.listFavoris.ElementAtOrDefault(0) != null)
+            if (ControleDesFiltres.listElementFiltrer.ElementAtOrDefault(0) != null)
             {
-                this.favoris1.Text = ControleDesFavoris.listFavoris[0].contenu;
+                this.favoris1.Text = ControleDesFiltres.listElementFiltrer[0];
             }
-            if (ControleDesFavoris.listFavoris.ElementAtOrDefault(1) != null)
+            if (ControleDesFiltres.listElementFiltrer.ElementAtOrDefault(1) != null)
             {
-                this.favoris2.Text = ControleDesFavoris.listFavoris[1].contenu;
+                this.favoris2.Text = ControleDesFiltres.listElementFiltrer[1];
             }
-            if (ControleDesFavoris.listFavoris.ElementAtOrDefault(2) != null)
+            if (ControleDesFiltres.listElementFiltrer.ElementAtOrDefault(2) != null)
             {
-                this.favoris3.Text = ControleDesFavoris.listFavoris[2].contenu;
+                this.favoris3.Text = ControleDesFiltres.listElementFiltrer[2];
             }
-            if (ControleDesFavoris.listFavoris.ElementAtOrDefault(3) != null)
+            if (ControleDesFiltres.listElementFiltrer.ElementAtOrDefault(3) != null)
             {
-                this.favoris4.Text = ControleDesFavoris.listFavoris[3].contenu;
+                this.favoris4.Text = ControleDesFiltres.listElementFiltrer[3];
             }
-            if (ControleDesFavoris.listFavoris.ElementAtOrDefault(4) != null)
+            if (ControleDesFiltres.listElementFiltrer.ElementAtOrDefault(4) != null)
             {
-                this.favoris5.Text = ControleDesFavoris.listFavoris[4].contenu;
+                this.favoris5.Text = ControleDesFiltres.listElementFiltrer[4];
             }
-            if (ControleDesFavoris.listFavoris.ElementAtOrDefault(5) != null)
+            if (ControleDesFiltres.listElementFiltrer.ElementAtOrDefault(5) != null)
             {
-                this.favoris6.Text = ControleDesFavoris.listFavoris[5].contenu;
+                this.favoris6.Text = ControleDesFiltres.listElementFiltrer[5];
             }
-            if (ControleDesFavoris.listFavoris.ElementAtOrDefault(6) != null)
+            if (ControleDesFiltres.listElementFiltrer.ElementAtOrDefault(6) != null)
             {
-                this.favoris7.Text = ControleDesFavoris.listFavoris[6].contenu;
+                this.favoris7.Text = ControleDesFiltres.listElementFiltrer[6];
             }
-            if (ControleDesFavoris.listFavoris.ElementAtOrDefault(7) != null)
+            if (ControleDesFiltres.listElementFiltrer.ElementAtOrDefault(7) != null)
             {
-                this.favoris8.Text = ControleDesFavoris.listFavoris[7].contenu;
+                this.favoris8.Text = ControleDesFiltres.listElementFiltrer[7];
             }
-            if (ControleDesFavoris.listFavoris.ElementAtOrDefault(8) != null)
+            if (ControleDesFiltres.listElementFiltrer.ElementAtOrDefault(8) != null)
             {
-                this.favoris9.Text = ControleDesFavoris.listFavoris[8].contenu;
+                this.favoris9.Text = ControleDesFiltres.listElementFiltrer[8];
             }
-            if (ControleDesFavoris.listFavoris.ElementAtOrDefault(9) != null)
+            if (ControleDesFiltres.listElementFiltrer.ElementAtOrDefault(9) != null)
             {
-                this.favoris10.Text = ControleDesFavoris.listFavoris[9].contenu;
+                this.favoris10.Text = ControleDesFiltres.listElementFiltrer[9];
             }
         }
 
@@ -145,13 +137,6 @@ namespace ProjetAgregation.Fenetres
         {
             WindowsSwitcher.Loader("Monaie");
             Console.WriteLine("La fenetre Monaie a ete loder, la presente va fermer");
-            this.Close();
-        }
-        //bouton experimentale pour les filtres
-        private void Filtrer_Click(object sender, RoutedEventArgs e)
-        {
-            WindowsSwitcher.LoaderFiltre(this);
-            Console.WriteLine("La fenetre Favoris a ete loder, la presente va fermer");
             this.Close();
         }
     }

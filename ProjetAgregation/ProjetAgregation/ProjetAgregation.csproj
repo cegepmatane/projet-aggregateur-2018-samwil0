@@ -94,7 +94,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Fenetres\Filtre.xaml">
+    <Page Include="Fenetres\FiltreVue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -124,6 +124,7 @@
     </Compile>
     <Compile Include="Code\Controle\ControleDesDonnesRecus.cs" />
     <Compile Include="Code\Controle\ControleDesFavoris.cs" />
+    <Compile Include="Code\Controle\ControleDesFiltres.cs" />
     <Compile Include="Code\Modelle\Favoris.cs" />
     <Compile Include="Code\Modelle\Meteo.cs" />
     <Compile Include="Code\Parseur\CryptoMonnaieDAO.cs" />
@@ -149,8 +150,8 @@
     <Compile Include="Fenetres\FavorisVue.xaml.cs">
       <DependentUpon>FavorisVue.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Fenetres\Filtre.xaml.cs">
-      <DependentUpon>Filtre.xaml</DependentUpon>
+    <Compile Include="Fenetres\FiltreVue.xaml.cs">
+      <DependentUpon>FiltreVue.xaml</DependentUpon>
     </Compile>
     <Compile Include="Fenetres\MeteoVue.xaml.cs">
       <DependentUpon>MeteoVue.xaml</DependentUpon>
